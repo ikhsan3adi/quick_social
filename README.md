@@ -1,16 +1,39 @@
-# quick_social
+# Quick Social App
 
-A new Flutter project.
+Simple social media app (prototype/only UI)
 
-## Getting Started
+![Quick Social Banner](https://github.com/ikhsan3adi/quick_social/blob/main/.screenshots/quick_social_banner.png?raw=true)
 
-This project is a starting point for a Flutter application.
+## 3rd Party Packages
 
-A few resources to get you started if this is your first Flutter project:
+- [google_fonts](https://pub.dev/packages/google_fonts)
+- [faker](https://pub.dev/packages/faker)
+- [story](https://pub.dev/packages/story)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Prerequisites
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter SDK with Dart SDK version 3.2.0 or higher
+- Internet Connection to load google fonts & images
+
+## Setup
+
+- Clone the repository
+
+```bash
+git clone https://github.com/ikhsan3adi/quick_social.git
+cd quick_social
+```
+
+- Install dependencies
+
+```bash
+flutter pub get
+```
+
+## Screenshots
+
+| Feed Page | Story View | My Profile Page |
+|---|---|---|
+| <img src="https://github.com/ikhsan3adi/quick_social/blob/main/.screenshots/quick_social-0.jpg?raw=true" width="180px"> | <img src="https://github.com/ikhsan3adi/quick_social/blob/main/.screenshots/quick_social-1.jpg?raw=true" width="180px"> |  <img src="https://github.com/ikhsan3adi/quick_social/blob/main/.screenshots/quick_social-2.jpg?raw=true" width="180px">  |
+| Profile Page | Comment Bottom Sheet | Notification Page |
+| <img src="https://github.com/ikhsan3adi/quick_social/blob/main/.screenshots/quick_social-3.jpg?raw=true" width="180px"> |  <img src="https://github.com/ikhsan3adi/quick_social/blob/main/.screenshots/quick_social-4.jpg?raw=true" width="180px"> | <img src="https://github.com/ikhsan3adi/quick_social/blob/main/.screenshots/quick_social-5.jpg?raw=true" width="180px"> |
