@@ -4,18 +4,18 @@ Simple social media app (prototype/only UI)
 
 ![Quick Social Banner](https://github.com/ikhsan3adi/quick_social/blob/main/.screenshots/quick_social_banner.png?raw=true)
 
-## 3rd Party Packages
+## 3rd Party Packages 👨‍💻
 
 - [google_fonts](https://pub.dev/packages/google_fonts)
 - [faker](https://pub.dev/packages/faker)
 - [story](https://pub.dev/packages/story)
 
-## Prerequisites
+## Prerequisites 📌
 
 - Flutter SDK with Dart SDK version 3.2.0 or higher
 - Internet Connection to load google fonts & images
 
-## Setup
+## Setup ⚙️
 
 - Clone the repository
 
@@ -30,7 +30,7 @@ cd quick_social
 flutter pub get
 ```
 
-## Screenshots
+## Screenshots 🖼️
 
 | Feed Page | Story View | My Profile Page |
 |---|---|---|
