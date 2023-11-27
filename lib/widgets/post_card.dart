@@ -32,7 +32,7 @@ class PostCard extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         ListTile(
-          onTap: () => Navigator.push(context, ProfilePage.route(post.owner)),
+          onTap: () => context.push(route: ProfilePage.route(post.owner)),
           leading: CircleAvatar(
             backgroundImage: NetworkImage(post.owner.profileImage),
           ),
@@ -95,9 +95,8 @@ class PostCard extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         ListTile(
-                          onTap: () => Navigator.push(
-                            context,
-                            ProfilePage.route(post.owner),
+                          onTap: () => context.push(
+                            route: ProfilePage.route(post.owner),
                           ),
                           contentPadding: EdgeInsets.zero,
                           leading: CircleAvatar(

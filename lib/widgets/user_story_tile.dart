@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quick_social/common/common.dart';
 import 'package:quick_social/models/models.dart';
 import 'package:quick_social/pages/user_story_page.dart';
 import 'package:quick_social/widgets/user_story_avatar.dart';
@@ -25,7 +26,7 @@ class UserStoryTile extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
           child: UserStoryAvatar(
             userStory: userStory,
-            onTap: () => Navigator.push(context, UserStoryPage.route(index)),
+            onTap: () => context.push(route: UserStoryPage.route(index)),
           ),
         ),
         SizedBox(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quick_social/common/responsive_context_extension.dart';
+import 'package:quick_social/common/common.dart';
 import 'package:quick_social/models/models.dart';
 import 'package:quick_social/pages/pages.dart';
 

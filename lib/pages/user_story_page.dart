@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quick_social/common/common.dart';
 import 'package:quick_social/models/models.dart';
 import 'package:quick_social/widgets/widgets.dart';
 import 'package:story/story_page_view.dart';
@@ -42,7 +43,7 @@ class UserStoryPage extends StatelessWidget {
         },
         pageLength: userStories.length,
         storyLength: (pageIndex) => userStories[pageIndex].stories.length,
-        onPageLimitReached: () => Navigator.pop(context),
+        onPageLimitReached: () => context.pop(),
       ),
     );
   }
@@ -64,7 +65,7 @@ class UserStoryPage extends StatelessWidget {
               padding: EdgeInsets.zero,
               color: Colors.white,
               icon: const Icon(Icons.arrow_back_ios_new),
-              onPressed: () => Navigator.pop(context),
+              onPressed: () => context.pop(),
             ),
             Flexible(
               child: ListTile(

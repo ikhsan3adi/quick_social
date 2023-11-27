@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quick_social/common/common.dart';
 import 'package:quick_social/models/models.dart';
 import 'package:quick_social/pages/pages.dart';
 import 'package:quick_social/widgets/widgets.dart';
@@ -54,7 +55,7 @@ class ProfilePage extends StatelessWidget {
               children: [
                 isNavigatorPushed
                     ? IconButton.filledTonal(
-                        onPressed: () => Navigator.pop(context),
+                        onPressed: () => context.pop(),
                         style: IconButton.styleFrom(
                           backgroundColor:
                               theme.colorScheme.primary.withAlpha(75),
@@ -145,9 +146,8 @@ class ProfilePage extends StatelessWidget {
               ),
               child: UserStoryAvatar(
                 userStory: story,
-                onTap: () => Navigator.push(
-                  context,
-                  UserStoryPage.route(0, userStories: [story]),
+                onTap: () => context.push(
+                  route: UserStoryPage.route(0, userStories: [story]),
                 ),
               ),
             ),
