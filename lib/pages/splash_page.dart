@@ -9,7 +9,7 @@ class SplashPage extends StatelessWidget {
   void splashing(BuildContext context) {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Future.delayed(const Duration(seconds: 3), () async {
-        context.push(route: HomePage.route());
+        if (context.mounted) context.push(route: HomePage.route());
       });
     });
   }
