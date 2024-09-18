@@ -49,7 +49,7 @@ class _CommentsBottomSheetState extends State<CommentsBottomSheet> {
             padding: const EdgeInsets.only(bottom: 64),
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
-              color: theme.colorScheme.background,
+              color: theme.colorScheme.surface,
               borderRadius: const BorderRadius.vertical(
                 top: Radius.circular(20),
               ),
@@ -128,7 +128,7 @@ class _CommentsBottomSheetState extends State<CommentsBottomSheet> {
                 hintText: 'Tulis sesuatu',
                 filled: true,
                 isDense: true,
-                fillColor: theme.colorScheme.background,
+                fillColor: theme.colorScheme.surface,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
                   borderSide: BorderSide.none,

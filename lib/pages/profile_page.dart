@@ -141,7 +141,7 @@ class ProfilePage extends StatelessWidget {
           child: FittedBox(
             child: Container(
               decoration: BoxDecoration(
-                color: theme.colorScheme.background,
+                color: theme.colorScheme.surface,
                 shape: BoxShape.circle,
               ),
               child: UserStoryAvatar(
