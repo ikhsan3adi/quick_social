@@ -17,11 +17,10 @@ class Story {
       (index) {
         final Faker faker = Faker();
         return Story(
-          storyImage: faker.image.image(
-            random: true,
+          storyImage: faker.image.loremPicsum(
+            random: 4,
             height: 640,
             width: 360,
-            keywords: ['nature', 'city'],
           ),
           caption: faker.lorem.sentence(),
         );

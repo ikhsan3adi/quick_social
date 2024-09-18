@@ -33,11 +33,10 @@ class Post {
       return Post(
         owner: User.dummyUsers[
             index > 15 ? 0 : Random().nextInt(User.dummyUsers.length - 1)],
-        postImage: faker.image.image(
-          random: true,
+        postImage: faker.image.loremPicsum(
+          random: 3,
           height: 640,
           width: 640,
-          keywords: ['nature', 'city'],
         ),
         location: '${faker.address.city()}, ${faker.address.country()}',
         caption: faker.lorem.sentence(),

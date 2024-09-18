@@ -29,17 +29,15 @@ class User {
       final Faker faker = Faker();
       return User(
         isMe: index == 0,
-        profileImage: faker.image.image(
-          random: true,
+        profileImage: faker.image.loremPicsum(
+          random: 1,
           width: 640,
           height: 640,
-          keywords: ['people'],
         ),
-        bannerImage: faker.image.image(
-          random: true,
+        bannerImage: faker.image.loremPicsum(
+          random: 2,
           width: 640,
           height: 480,
-          keywords: ['nature', 'city'],
         ),
         username: faker.internet.userName(),
         fullname: faker.person.name(),
