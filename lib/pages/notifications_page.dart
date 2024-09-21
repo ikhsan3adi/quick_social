@@ -20,11 +20,13 @@ class _NotificationsPageState extends State<NotificationsPage>
     _notifications = UserNotification.dummyNotifications;
   }
 
-  void readAll() => setState(() {
-        _notifications = _notifications.map((e) {
-          return e.copyWith(isRead: true);
-        }).toList();
-      });
+  void readAll() {
+    setState(() {
+      _notifications = _notifications.map((e) {
+        return e.copyWith(isRead: true);
+      }).toList();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

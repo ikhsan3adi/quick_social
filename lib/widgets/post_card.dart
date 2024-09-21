@@ -95,9 +95,9 @@ class PostCard extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         ListTile(
-                          onTap: () => context.push(
-                            route: ProfilePage.route(post.owner),
-                          ),
+                          onTap: () {
+                            context.push(route: ProfilePage.route(post.owner));
+                          },
                           contentPadding: EdgeInsets.zero,
                           leading: CircleAvatar(
                             backgroundImage:
@@ -257,10 +257,12 @@ class _ToggleButtonState extends State<_ToggleButton>
         color: _isActive ? theme.colorScheme.primary : null,
       ),
       text: _count.toString(),
-      onTap: () => setState(() {
-        _isActive = !_isActive;
-        _isActive ? _count++ : _count--;
-      }),
+      onTap: () {
+        setState(() {
+          _isActive = !_isActive;
+          _isActive ? _count++ : _count--;
+        });
+      },
     );
   }
 

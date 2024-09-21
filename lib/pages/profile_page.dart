@@ -12,9 +12,11 @@ class ProfilePage extends StatelessWidget {
   })  : story = UserStory.dummyUserStories.firstWhere((e) => e.owner == user),
         posts = Post.dummyPosts.where((e) => e.owner == user).toList();
 
-  static MaterialPageRoute route(User user) => MaterialPageRoute(
-        builder: (_) => ProfilePage(user: user, isNavigatorPushed: true),
-      );
+  static MaterialPageRoute route(User user) {
+    return MaterialPageRoute(
+      builder: (_) => ProfilePage(user: user, isNavigatorPushed: true),
+    );
+  }
 
   final bool isNavigatorPushed;
 
@@ -146,9 +148,11 @@ class ProfilePage extends StatelessWidget {
               ),
               child: UserStoryAvatar(
                 userStory: story,
-                onTap: () => context.push(
-                  route: UserStoryPage.route(0, userStories: [story]),
-                ),
+                onTap: () {
+                  context.push(
+                    route: UserStoryPage.route(0, userStories: [story]),
+                  );
+                },
               ),
             ),
           ),

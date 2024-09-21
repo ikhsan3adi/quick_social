@@ -14,13 +14,16 @@ class UserStoryPage extends StatelessWidget {
   static MaterialPageRoute route(
     int initialIndex, {
     List<UserStory>? userStories,
-  }) =>
-      MaterialPageRoute(
-        builder: (_) => UserStoryPage(
+  }) {
+    return MaterialPageRoute(
+      builder: (_) {
+        return UserStoryPage(
           initialIndex: initialIndex,
           userStories: userStories ?? UserStory.dummyUserStories,
-        ),
-      );
+        );
+      },
+    );
+  }
 
   final int initialIndex;
   final List<UserStory> userStories;

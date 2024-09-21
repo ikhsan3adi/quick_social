@@ -37,13 +37,13 @@ class FeedPage extends StatelessWidget {
               itemCount: Post.dummyPosts.length,
               physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
-              separatorBuilder: (context, index) => const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16),
-                child: Divider(height: 4),
-              ),
-              itemBuilder: (context, index) {
-                return PostCard(post: Post.dummyPosts[index]);
+              separatorBuilder: (_, index) {
+                return const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  child: Divider(height: 4),
+                );
               },
+              itemBuilder: (_, index) => PostCard(post: Post.dummyPosts[index]),
             )
           ],
         ),

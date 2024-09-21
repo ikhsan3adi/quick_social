@@ -51,7 +51,7 @@ class UserPostsTabView extends StatelessWidget {
       shrinkWrap: true,
       itemCount: posts.length,
       physics: const NeverScrollableScrollPhysics(),
-      itemBuilder: (context, index) {
+      itemBuilder: (_, index) {
         return AspectRatio(
           aspectRatio: 1,
           child: Image.network(

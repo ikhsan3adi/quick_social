@@ -35,9 +35,11 @@ class _NotificationTileState extends State<NotificationTile> {
     final DateTime dateTime = widget.notification.dateTime;
 
     return ListTile(
-      onTap: () => setState(() {
-        _notification = _notification.copyWith(isRead: true);
-      }),
+      onTap: () {
+        setState(() {
+          _notification = _notification.copyWith(isRead: true);
+        });
+      },
       leading: Icon(
         switch (widget.notification.type) {
           NotificationType.like => Icons.favorite,

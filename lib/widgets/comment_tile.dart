@@ -87,10 +87,12 @@ class _CommentLikeButtonState extends State<_CommentLikeButton> {
       ),
       padding: const EdgeInsets.only(top: 2, right: 2, bottom: 2),
       text: _count.toString(),
-      onTap: () => setState(() {
-        _isLiked = !_isLiked;
-        _isLiked ? _count++ : _count--;
-      }),
+      onTap: () {
+        setState(() {
+          _isLiked = !_isLiked;
+          _isLiked ? _count++ : _count--;
+        });
+      },
     );
   }
 }
