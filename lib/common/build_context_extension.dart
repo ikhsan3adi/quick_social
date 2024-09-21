@@ -23,7 +23,7 @@ extension BuildContextX on BuildContext {
   }
 
   Future<T?> push<T>({Route<T>? route, Widget? widget}) {
-    assert(route == null && widget == null);
+    assert(route != null || widget != null);
 
     return Navigator.of(this)
         .push<T>(route ?? MaterialPageRoute(builder: (_) => widget!));
