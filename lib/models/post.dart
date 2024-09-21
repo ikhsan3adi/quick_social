@@ -34,7 +34,7 @@ class Post {
         owner: User.dummyUsers[
             index > 15 ? 0 : Random().nextInt(User.dummyUsers.length - 1)],
         postImage: faker.image.loremPicsum(
-          random: 3,
+          random: Random().nextInt(30),
           height: 640,
           width: 640,
         ),

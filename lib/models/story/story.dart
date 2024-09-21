@@ -18,7 +18,7 @@ class Story {
         final Faker faker = Faker();
         return Story(
           storyImage: faker.image.loremPicsum(
-            random: 4,
+            random: Random().nextInt(10),
             height: 640,
             width: 360,
           ),

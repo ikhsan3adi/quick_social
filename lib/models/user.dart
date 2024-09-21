@@ -30,12 +30,12 @@ class User {
       return User(
         isMe: index == 0,
         profileImage: faker.image.loremPicsum(
-          random: 1,
+          random: Random().nextInt(5),
           width: 640,
           height: 640,
         ),
         bannerImage: faker.image.loremPicsum(
-          random: 2,
+          random: Random().nextInt(5),
           width: 640,
           height: 480,
         ),
